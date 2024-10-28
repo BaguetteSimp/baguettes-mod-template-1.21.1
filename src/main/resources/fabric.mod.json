@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "baguettesmod",
+	"version": "${version}",
+	"name": "Baguettes Mod",
+	"description": "mod",
+	"authors": [
+		"Baguette"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/BaguetteSimp/baguettes-mod-template-1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/baguettesmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.baguette.baguettesmod.BaguettesMod"
+		],
+		"fabric-datagen": [
+			"net.baguette.baguettesmod.BaguettesModDataGenerator"
+		],
+		"client": [
+			"net.baguette.baguettesmod.BaguettesModClient"
+		]
+	},
+	"mixins": [
+		"baguettesmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

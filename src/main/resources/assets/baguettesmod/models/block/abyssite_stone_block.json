@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "baguettesmod:block/abyssite_stone_block"
+  }
+}
